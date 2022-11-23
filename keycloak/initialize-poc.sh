@@ -5,11 +5,11 @@ echo "Creating PoC Users, Role Model, User Role Assigments and Clients"
 /opt/keycloak/bin/kcadm.sh config credentials --server http://localhost:8080 --realm master --user $KEYCLOAK_USER --password $KEYCLOAK_PASSWORD
 
 # Users
-/opt/keycloak/bin/kcadm.sh create users -r master -s username=paula -s firstName=Paula -s lastName=Von -s enabled=true -s email=paula@demo.com
+/opt/keycloak/bin/kcadm.sh create users -r master -s username=paula -s firstName=Paula -s lastName=Von -s enabled=true -s email=paula@demo.com -s "attributes.org_id=12345"
 /opt/keycloak/bin/kcadm.sh set-password -r master --username paula --new-password demo1234!
-/opt/keycloak/bin/kcadm.sh create users -r master -s username=peter -s firstName=Peter -s lastName=Anderson -s enabled=true -s email=peter@demo.com
+/opt/keycloak/bin/kcadm.sh create users -r master -s username=peter -s firstName=Peter -s lastName=Anderson -s enabled=true -s email=peter@demo.com -s "attributes.org_id=67890"
 /opt/keycloak/bin/kcadm.sh set-password -r master --username peter --new-password demo1234!
-/opt/keycloak/bin/kcadm.sh create users -r master -s username=richard  -s firstName=Richard -s lastName=Miles -s enabled=true -s email=richard@demo.com
+/opt/keycloak/bin/kcadm.sh create users -r master -s username=richard  -s firstName=Richard -s lastName=Miles -s enabled=true -s email=richard@demo.com -s "attributes.org_id=34567"
 /opt/keycloak/bin/kcadm.sh set-password -r master --username richard --new-password demo1234!
 
 # Role model

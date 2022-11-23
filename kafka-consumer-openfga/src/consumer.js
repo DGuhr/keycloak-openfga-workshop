@@ -30,10 +30,10 @@ const run = async () => {
       console.log(`[Kafka Consumer OpenFGA] ${prefix} ${message.key}#${message.value}`);
       console.log("[Kafka Consumer OpenFGA] Proceeding to publish message");
       if(!openFga.storeId){
-        console.log("[Kafka Consumer OpenFGA] Upps OpenFGA is not initialized properly...");
+        console.log("[Kafka Consumer OpenFGA] oops - OpenFGA is not initialized properly...");
         await getOpenFGAStore();
         if(!openFga.storeId){
-          console.error("[Kafka Consumer OpenFGA] OpenFGA doesn't have store id, therefore, we are not going to publish the events..");
+          console.error("[Kafka Consumer OpenFGA] OpenFGA doesn't have a store id, therefore, we are not going to publish the events..");
           return;
         }
       }

@@ -1,0 +1,66 @@
+{
+    "writes":
+    {
+        "tuple_keys":
+        [
+            {
+                "object": "role:view-product",
+                "relation": "parent",
+                "user": "role:analyst-catalog"
+            }
+        ]
+    }
+}
+{
+    "writes":
+    {
+        "tuple_keys":
+        [
+            {
+                "object": "role:view-product",
+                "relation": "parent",
+                "user": "role:admin-catalog"
+            }
+        ]
+    }
+}
+{
+    "writes":
+    {
+        "tuple_keys":
+        [
+            {
+                "object": "role:edit-product",
+                "relation": "parent",
+                "user": "role:admin-catalog"
+            }
+        ]
+    }
+}
+{
+    "writes":
+    {
+        "tuple_keys":
+        [
+            {
+                "object": "role:analyst-catalog",
+                "relation": "assignee",
+                "user": "user:401522bf-aa8d-4bc4-93cf-4308e1ee490c"
+            }
+        ]
+    }
+}
+{
+    "writes":
+    {
+        "tuple_keys":
+        [
+            {
+                "object": "role:admin-catalog",
+                "relation": "assignee",
+                "user": "user:5563d66f-f9a0-476a-83d6-c04622af83e4"
+            }
+        ]
+    }
+}
+
